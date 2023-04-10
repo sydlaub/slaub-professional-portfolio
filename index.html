@@ -5,44 +5,74 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./assets/style.css">
-<title>My Landing Page</title>
+<title>Sydney's Portfolio</title>
 </head>
 
 <body>
     <header>
+        <h1>Sydney R Laub</h1>
         <nav class="text-right">
             <ul>
-                <li><a href="#About-Me>About Me</a></li>
-                <li><a href="#My-Work">My Work</a></li>
-                <li><a href="#Contact-Me">Contact Me</a></li>
+                <li>
+                    <a href="#About-Me-Label">About Me</a>
+                </li>
+                <li>
+                    <a href="#My-Work-Label">My Work</a>
+                </li>
+                <li>
+                    <a href="#Contact-Me-Label">Contact Me</a>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <div class="hero-image">
+        <div class="hero-text">
+        <h2>Welcome to my page</h2>
+        </div>
+    </div>
+
     <main>
-        <h1 class="text-center">My New Website</h1>
-        <figure>
-            <img src="./assets/Images/Landing-page-image.jpg" alt="Modern Technology Illustration">
-            <figcaption class="text-center">Welcome to the landing page for my new website!</figcaption>
-        </figure>
-        <section id="contact">
-            <h2 class="text-center">Contact Me!</h2>
-            <form>
-                <ul>
-                    <li>
-                        <label class="text-right" for="name">Name:</label>
-                        <input type="text" id="name" name="user-name">
-                    </li>
-                    <li>
-                        <label class="text-right" for="email">Email:</label>
-                        <input type="text" id="email" name="user-email">
-                    </li>
-                </ul>
-                <div class="text-center">
-                    <button type="submit">SEND</button>
-                </div>
-            </form>
+        <section class="About-Me">
+            <div id="About-Me-Label">
+                <h3>About Me</h3>
+            </div>
+            <div id="About-Me-Content">
+                <p>
+                    Hi there! Welcome to my portfolio - I'm happy you're here! Let's get started with a few things about me. My name
+                    is Sydney but my friends and family usually call me Syd. I am 24 years old, I attended the Univeristy of
+                    Michigan (Go Blue!) where I studied Biology. I have a passion for learning and helping others. I decided to get
+                    into coding because of my natural inclination toward puzzles and details paried with a curiousity and passion
+                    for technology and its trajectory within our society.
+                </p>
+            </div>
         </section>
+        
+
+        <section class="My-Work">
+            <div id="My-Work-Label">
+                <h3>My Work</h3>
+            </div>
+            <div id="My-Work-Content">
+
+            </div>
+        </section>
+
+        <section class="Contact-Me">
+            <div id="Contact-Me-Label">
+                <h3>Contact Me</h3>
+            </div>
+            
+            <div id="Conact-Me-Content">
+            <ul>
+                <li><a href="mailto:syd.laub18@gmail.com">Email</a></li>
+                <li>248.891.0703</li>
+                <li><a href="https://github.com/sydlaub">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/sydney-laub-1b854919a/">LinkedIn</a></li>
+            </ul>
+            </div>
+        </section>
+    
     </main>
 
     <footer class="text-center">
