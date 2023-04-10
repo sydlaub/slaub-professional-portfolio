@@ -1,10 +1,13 @@
 *{
     box-sizing: border-box;
-    margin: auto;
+    margin: 1%;
     padding: 0%;
 }
-.header{
-
+header{
+    padding: 30px;
+    background-color: #FFFFE1;
+    color: navy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Hero Image */
