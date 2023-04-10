@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.section-container {
+    display: flex;
+}
+
+.section {
+    display: flex;
+    padding: 10px;
+}
+
+.section-container :nth-child(1) {
+
+    flex: 1 0 20%;
+}
+
+.section-container :nth-child(2) {
+
+    flex: 1 0 70%;
+    border-left: 2px solid black;
+}
+
