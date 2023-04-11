@@ -1,0 +1,123 @@
+:root {
+    --themeColor1: lightblue;
+    --themeColor2: #FFFFE1;
+    --border1: solid 2px black;
+    --border2: solid 5px red;
+    --border3: solid 2px green;
+}
+
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--themeColor2);
+}
+
+/* Element Selectors */
+.header {
+    padding: 1rem 0.5rem;
+    display: flex;
+    /* flex-direction: ; */
+    justify-content: space-between;
+    border: solid 2px black;
+    /* padding: 30px; */
+    background-color: var(--themeColor1);
+    color: navy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header .h1 {
+    background-color: inherit;
+    font-style: oblique;
+    border: var(--border1);
+}
+
+.header nav {
+    border: var(--border1);
+    background-color: inherit;
+    padding-bottom: 10px;
+    /* margin-right: 20px; */
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    background-color: inherit;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    background-color: inherit;
+    display: inline-block;
+    align-items: end;
+
+}
+
+
+/* ID selectors */
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: var(--border1);
+}
+
+.section-styling {
+    display: flex;
+    flex-direction: column;
+    border: var(--border3);
+    margin: 3rem 0;
+}
+
+.section-title {
+    border: var(--border1);
+    margin-right: 1rem;
+    width: fit-content;
+    min-width: 15%;
+}
+
+.section-content-work {
+    display: flex
+}
+/* Class Selectors */
+
+/* Hero Image */
+.hero-image {
+    border: var(--border2);
+    background-image: url("../Photos/marina-hero.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.hero-text {
+    border: var(--border3);
+    position: absolute;
+    bottom: 1rem;
+    color: white;
+    right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .section-styling {
+        flex-direction: row;
+    }
+}
