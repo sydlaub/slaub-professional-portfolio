@@ -1,30 +1,85 @@
+/* Universal Selector */
 *{
     box-sizing: border-box;
     margin: 1%;
     padding: 0%;
+    background-color: #FFFFE1;
 }
+/* Element Selectors */
 header{
     padding: 30px;
-    background-color: #FFFFE1;
+    background-color: lightblue;
     color: navy;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Class Selectors */
+.About-Me{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.About-Me div{
+    flex-direction: row;
+}
+
+.header nav{
+    padding-bottom: 10px;
+    margin-right: 20px;
+    float: right;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline-block;
+    align-items: end;
+
+}
+
+
+/* ID selectors */
+#h1{
+    background-color: lightblue;
+    font-style: oblique;
+}
+
+
 /* Hero Image */
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Photos/portfolio\ hero\ image.avif);
-    height: 250px;
+    background-image:url(./Photos/Marina-Hero\ image.jpg);
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    margin: 0;
+    padding: 0;
 
 }
 
 .hero-text {
-    /* text-align:right; */
-    position:relative;
+    text-align: right;
+    position: absolute;
     left: 77%;
     top: 85%;
     color: white;
 }
+
