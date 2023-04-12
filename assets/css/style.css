@@ -1,8 +1,6 @@
 :root {
     --themeColor1: lightblue;
-    --border1: solid 2px black;
-    --border2: solid 5px red;
-    --border3: solid 2px green;
+    --themeColor2: #f9e1ca;
 }
 
 /* Universal Selector */
@@ -43,7 +41,6 @@ main {
 .header .h1 {
     background-color: inherit;
     font-style: oblique;
-    border: var(--border1);
 }
 
 .header nav {
@@ -71,24 +68,28 @@ main {
 .section-styling {
     display: flex;
     flex-direction: column;
-    border: var(--border3);
     margin: 3rem 0;
 }
 
 .section-title {
-    border: var(--border1);
+    display: flex;
     margin-right: 1rem;
-    width: fit-content;
+    /* width: fit-content; */
     min-width: 40%;
+    border-right: solid 2px navy;
 }
 
 .section-title h3{
-    text-align: center;
+    align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .section-content-work {
     display: flex
+}
+
+.section-content-work div{
+    justify-content: space-around;
 }
 
 .section-content-contact {
@@ -103,8 +104,9 @@ main {
 }
 
 /* ID selectors */
-#work-img-1 {
+.work-img-1 {
     height: 15rem;
+    border: solid 2px black
 }
 
 #About-Me-Content{
@@ -135,17 +137,40 @@ main {
     .section-styling {
         flex-direction: row;
     }
+    .section-content-work{
+        ;
+    }
 }
 
 /* Images */
-.img-1-container{
+.work-img-container{
     position: relative;
     text-align: center;
+    padding: 1rem;
+
 
 }
-.img-1-container .img-1-text {
+.work-img-container .img-1-text {
     position: absolute;
     bottom: 5px;
     left: 2px;
-    background-color: gray;
+    background-color: white;
+    border:solid 1px black 
+}
+
+.img-2-container {
+    padding: 1rem;
+
+}
+
+#work-img-2{
+    height: 7.5rem;
+    border: solid 2px black
+
+}
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 8rem;
+    align-items: center;
 }
